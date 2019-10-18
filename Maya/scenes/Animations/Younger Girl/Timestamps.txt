@@ -1,0 +1,10 @@
+Idle -- 2-82
+Walk -- 83-86 Start walk, 86-106 Walk
+Run -- 108- Start run, 
+Jump -- 
+Hurt -- 
+Dead --
+
+Flame attack --
+Ice attack -- 
+Air shove --

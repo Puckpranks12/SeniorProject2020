@@ -1,10 +1,10 @@
 Idle -- 2-82
 Walk -- 83-86 Start walk, 86-106 Walk
-Run -- 108- Start run, 
-Jump -- 
-Hurt -- 
-Dead --
+Run -- 108-109 Start run, 109-124 run
+Jump -- 128-132 Up, 132-138 idle, 138-143 land, 143-148 back up
+Hurt -- 149-158
+Dead -- 159-178
 
-Flame attack --
-Ice attack -- 
-Air shove --
+Flame attack --180-186 start, 186-192 repeat, 192-198 stop
+Ice attack -- 199-218
+Air shove -- 219-231

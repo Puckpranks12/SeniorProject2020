@@ -13,7 +13,7 @@ public class RechargeAbility : MonoBehaviour
     public void StartRecharge()
     {
         isRecharging = true;
-        StartCoroutine(Recharge())
+        StartCoroutine(Recharge());
     }
 
     public void StopRecharge()

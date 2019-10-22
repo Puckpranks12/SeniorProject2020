@@ -31,7 +31,7 @@ public class AimCamera : MonoBehaviour
         {
             GetComponent<OrbitingCameraController>().canOrbit = false;
             lastCameraPos = transform.position;
-
+            /*
             if(rightShoulder)
             {
                 StartCoroutine(LerpToPoint(transform.position, shoulderPos.transform.position));
@@ -40,7 +40,7 @@ public class AimCamera : MonoBehaviour
             {
                 StartCoroutine(LerpToPoint(transform.position, leftShoulderPos.transform.position));
             }
-
+            */
             transform.parent = shoulderPos.transform;
             canAim = true;
             StartCoroutine(Aim());
@@ -49,6 +49,7 @@ public class AimCamera : MonoBehaviour
 
     public void StopAim()
     {
+
         canAim = false;
         StartCoroutine(LerpToPoint(transform.position, lastCameraPos));
         transform.parent = null;
@@ -56,6 +57,7 @@ public class AimCamera : MonoBehaviour
 
     IEnumerator Aim()
     {
+
         aimRunning = true;
         while(canAim)
         {
@@ -103,5 +105,6 @@ public class AimCamera : MonoBehaviour
             angle -= 360F;
         return Mathf.Clamp(angle, min, max);
     }
+
 
 }
